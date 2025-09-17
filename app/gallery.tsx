@@ -13,26 +13,24 @@ import {
 const products = [
   {
     id: "1",
-    title: "React T-Shirt",
-    price: "$25",
-    description: "Comfortable t-shirt with the React logo.",
-    image: require("@/assets/images/react-shirt.png"), // local image
+    title: "Mug Antique Blue x6",
+    price: "$72",
+    description: "A set of six ceramic mugs with a charming antique blue glaze, designed for coffee, tea, or hot beverages.",
+    image: require("@/assets/images/mug.webp"), // local image
   },
   {
     id: "2",
-    title: "Running Shoes",
-    price: "$60",
-    description: "Ultra-lightweight running shoes.",
-    image: {
-      uri: "https://images.unsplash.com/photo-1600185365929-3c3bb3f3a0b1",
-    }, // remote image
+    title: "Bowl Antique Blue x6",
+    price: "$69",
+    description: "A set of six versatile bowls featuring a rich blue antique finish, ideal for soups, salads, or side dishes.",
+    image: require("@/assets/images/bowl.webp"), // local image
   },
   {
     id: "3",
-    title: "Blue Cap",
-    price: "$15",
-    description: "Adjustable visor cap.",
-    image: require("@/assets/images/cap.png"),
+    title: "Dessert Plate Antique Blue x6",
+    price: "$69",
+    description: "A set of six elegant dessert plates with a deep blue antique-style glaze, perfect for serving cakes, pastries, or small meals.",
+    image: require("@/assets/images/plate.webp"),
   },
 ];
 
