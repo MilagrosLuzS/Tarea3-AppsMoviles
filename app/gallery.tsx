@@ -23,7 +23,7 @@ const products = [
     title: "Bowl Antique Blue x6",
     price: "$69",
     description: "A set of six versatile bowls featuring a rich blue antique finish, ideal for soups, salads, or side dishes.",
-    image: require("@/assets/images/bowl.webp"), // local image
+    image: { uri: "https://github.com/MilagrosLuzS/Tarea3-AppsMoviles/blob/main/assets/images/bowl.webp?raw=true" },
   },
   {
     id: "3",
@@ -134,7 +134,7 @@ export default function GalleryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f7f5f0",
+    backgroundColor: "#ccc8be",
     padding: 16,
   },
   input: {
@@ -150,14 +150,16 @@ const styles = StyleSheet.create({
   },
   card: {
     flexDirection: "row",
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    padding: 12,
+    backgroundColor: "#f7f5f0",
+    borderRadius: 30,
+    borderWidth: 3,
+    borderColor: "#e3e0d8",
+    padding: 9,
     alignItems: "center",
     shadowColor: "#000",
-    shadowOpacity: 0.1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
+    shadowOpacity: 0.3,
+    shadowOffset: { width: 0, height: 5 },
+    shadowRadius: 6,
     elevation: 3,
   },
   favorite: {
@@ -176,10 +178,11 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 16,
     fontWeight: "600",
+    color: '#968f7b',
   },
   cardPrice: {
     fontSize: 14,
-    color: "#666",
+    color: "#968f7b",
   },
   favIcon: {
     fontSize: 20,
@@ -193,7 +196,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   modalContent: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f7f5f0",
     borderRadius: 20,
     padding: 20,
     alignItems: "center",
@@ -208,6 +211,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "700",
     marginBottom: 8,
+    color: '#968f7b',
   },
   modalDesc: {
     fontSize: 14,
@@ -227,7 +231,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#eee",
   },
   resizeButtonActive: {
-    backgroundColor: "#4a90e2",
+    backgroundColor: "#968f7b",
   },
   resizeText: {
     color: "#333",
@@ -235,7 +239,7 @@ const styles = StyleSheet.create({
   },
   closeButton: {
     marginTop: 10,
-    backgroundColor: "#e74c3c",
+    backgroundColor: "#968f7b",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 12,
